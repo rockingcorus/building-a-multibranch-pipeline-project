@@ -7,12 +7,15 @@ pipeline {
     }
     environment {
         CI = 'true'
+        VAULT_ADDR ='http://127.0.0.1:8200'
+        CI = 'true'
     }
     stages {
         stage('Build') {
             steps {
                 sh 'ls'
                 sh 'env'
+                sh 'vault status'
                 sh 'npm install'
             }
         }
