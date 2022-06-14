@@ -12,6 +12,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'ls'
+                sh 'env'
                 sh 'npm install'
             }
         }
