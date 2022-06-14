@@ -8,7 +8,7 @@ pipeline {
     environment {
         CI = 'true'
         VAULT_ADDR ='http://127.0.0.1:8200'
-        CI = 'true'
+        VAULT_TOKEN = 'hvs.EGs0PmHasKTB5WPc3pqhvzSo'
     }
     stages {
         stage('Build') {
