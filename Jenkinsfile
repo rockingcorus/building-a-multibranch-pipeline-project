@@ -15,6 +15,7 @@ pipeline {
             steps {
                 sh 'ls'
                 sh 'env'
+                sh 'yum install vault'
                 sh 'vault status'
                 sh 'npm install'
             }
